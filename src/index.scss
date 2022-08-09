@@ -1,0 +1,54 @@
+:root {
+	--csnsw-blue: #31469f;
+	--csnsw-yellow: rgb(255, 175, 35);
+	--background-light: #fafafa;
+	--background-dark: #f9f9f9;
+
+	--on-hover-filter: invert(33%) sepia(40%) saturate(1034%) hue-rotate(339deg) brightness(124%)
+		contrast(101%);
+	--on-hover-filter-brighter: invert(33%) sepia(40%) saturate(1034%) hue-rotate(339deg)
+		brightness(204%) contrast(101%);
+
+	--shadow-dark: 2px 3px 6px rgba(0, 0, 0, 0.2);
+
+	--hover-highlight: rgba(255, 175, 35, 0.8);
+
+	--text-dark: rgba(0, 0, 0, 0.85);
+	--text-light: rgba(255, 255, 255, 0.85);
+
+	--scrollbar-thumb: #707070;
+	--scrollbar-track: #c9c8c8;
+	--scrollbar: 8px;
+	--scrollbar-button: 4px;
+
+	--border-radius: 10px;
+	--container-margin: 8px;
+	--margin-bottom-zero: 0px;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+		"Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: var(--text-dark);
+	height: 100%;
+}
+
+#_csnsw_microfrontend_root {
+	height: 100%;
+	// overflow: hidden; // got to think about how this works in the container and impact to other MFE's
+}

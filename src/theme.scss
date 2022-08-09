@@ -1,0 +1,94 @@
+span.ant-input-affix-wrapper-lg:hover {
+	border-color: #31469f;
+}
+
+span.ant-input-affix-wrapper-lg {
+	border-color: #31469f;
+	border-radius: var(--border-radius);
+}
+
+.ant-timeline-item-head-red,
+.ant-timeline-item-head-green,
+.ant-timeline-item-head-blue {
+	border: 1px solid;
+}
+
+div.ant-timeline-item-head-custom {
+	background-color: transparent;
+	border: transparent;
+}
+
+.ant-timeline-item-last {
+	.ant-timeline-item-content {
+		min-height: 0px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.ant-timeline-item {
+		font-size: smaller;
+	}
+}
+
+.fa-magnifying-glass,
+.fa-arrow-left-long,
+.fa-square-list,
+.fa-bars-filter,
+.fa-xmark {
+	transition: background 0.1s ease-out 0s;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	padding: 8px;
+}
+
+.fa-magnifying-glass:hover,
+.fa-arrow-left-long:hover,
+.fa-square-list:hover,
+.fa-bars-filter:hover,
+.fa-xmark:hover {
+	background-color: rgba(9, 30, 66, 0.08);
+	transition: background 0s ease-out 0s;
+}
+
+.fa-square-list,
+.fa-magnifying-glass,
+.fa-arrow-left-long,
+.fa-bars-filter,
+.fa-browser,
+.fa-calendar-clock,
+.fa-user,
+.fa-envelope,
+.fa-file-lines,
+.fa-school,
+.fa-xmark {
+	color: #00215087;
+}
+
+.ant-card.ant-card-hoverable {
+	.ant-card-body:hover {
+		background-color: rgba(9, 30, 66, 0.08);
+		transition: background 0.1s ease-out 0s;
+	}
+}
+
+.ant-btn.ant-btn-primary.ant-btn-sm.ant-btn-background-ghost {
+	transition: background 0s ease-out 0s;
+}
+
+.ant-btn.ant-btn-primary.ant-btn-sm.ant-btn-background-ghost:hover {
+	background-color: rgba(9, 30, 66, 0.08);
+	transition: background 0.1s ease-out 0s;
+}
+
+@media (max-width: 1200px) {
+	.ant-timeline-item {
+		font-size: smaller;
+	}
+}
+
+@media (max-width: 1050px) {
+	.ant-timeline-item {
+		font-size: small;
+	}
+}

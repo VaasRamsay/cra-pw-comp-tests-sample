@@ -1,0 +1,108 @@
+// @import "breakpoints";
+// TODO: Remove this import if not needed, else find workaround for vite
+
+.topbar {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: max-content 565px;
+	grid-template-rows: 50px;
+	align-items: center;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	position: relative;
+
+	&__heading {
+		grid-column: 1 / 2;
+		color: var(--text-dark);
+		margin-bottom: var(--margin-bottom-zero);
+		font-size: xx-large;
+		font-weight: 400;
+	}
+
+	&__searchbar {
+		grid-column: 2 / 3;
+	}
+
+	&__searchbarDropdown {
+		box-shadow: var(--shadow-dark);
+		padding: 10px;
+		margin-top: 55px;
+		top: 0;
+		left: 0;
+		margin-left: 140px;
+		width: 560px;
+		position: absolute;
+		background-color: whitesmoke;
+		z-index: 2;
+		height: 0;
+		opacity: 0;
+		transition: all 0s;
+		overflow: hidden;
+
+		&_expanded {
+			display: block;
+			height: max-content;
+			opacity: 1;
+			transition: all 0.35s;
+		}
+
+		&_buttons {
+			width: 100%;
+			justify-content: center;
+		}
+	}
+}
+
+.ant-pagination-item-ellipsis {
+	color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 935px) {
+	.topbar {
+		padding-right: 15px;
+		grid-template-columns: max-content auto;
+
+		&__searchbar {
+			grid-column: 2 / 3;
+		}
+
+		&__searchbarDropdown {
+			margin-right: 15px;
+			right: 0;
+			width: auto;
+		}
+	}
+}
+
+@media (max-width: 775px) {
+	.topbar {
+		padding-right: 15px;
+		grid-template-columns: max-content auto;
+		column-gap: 5px;
+
+		&__searchbar {
+			grid-row: 1 / 2;
+			grid-column: 2 / 3;
+		}
+
+		&__leftArrowIcon {
+			grid-column: 1 / 2;
+			justify-self: flex-start;
+			grid-row: 1 / 2;
+		}
+
+		&__searchIcon {
+			grid-column: 2 / 3;
+			justify-self: flex-end;
+		}
+
+		&__searchbarDropdown {
+			margin-right: 15px;
+			right: 0;
+			width: auto;
+			margin-left: 40px;
+		}
+	}
+}
